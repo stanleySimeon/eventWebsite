@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-- [Live Demo Link](https://mstanley-me.github.io/stanleyCapstone/)
+- [Live Demo Link](https://mstanley-me.github.io/StanleyCapstone/)
 
 
 ## Getting Started
