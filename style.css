@@ -126,7 +126,7 @@ header ul li {
 
 #about {
   background-image: url("./images/pattern.jpg");
-  height: 100vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -163,6 +163,7 @@ header ul li {
   align-items: center;
   background-color: #d8d8d81f;
   backdrop-filter: blur(2px);
+  border-radius: 10px;
 }
 
 .card .card-1-img {
@@ -218,7 +219,7 @@ header ul li {
     color: #272a31;
   }
 
-  .navbar .close-btn {
+  .navbar .items .item .close-btn {
     color: #fff;
     position: absolute;
     top: 17px;
@@ -236,10 +237,11 @@ header ul li {
     padding: 100px;
     flex-direction: column;
     align-items: center;
-    background-color: #272a31cb;
+    background-color: #272a31e0;
     transition: right 0.3s ease;
     display: none;
     z-index: 10;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
