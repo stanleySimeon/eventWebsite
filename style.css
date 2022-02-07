@@ -218,7 +218,7 @@ header ul li {
     color: #272a31;
   }
 
-  .navbar .close-btn {
+  .navbar .items .item .close-btn {
     color: #fff;
     position: absolute;
     top: 17px;
