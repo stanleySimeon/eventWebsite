@@ -126,7 +126,7 @@ header ul li {
 
 #about {
   background-image: url("./images/pattern.jpg");
-  height: 100vh;
+  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
