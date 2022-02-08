@@ -331,6 +331,10 @@ header .item:hover {
   .about-items-container .btn2 {
     display: none;
   }
+
+  #about{
+      height: 120vh;
+  }
 }
 
 @media (min-width: 768px) {
