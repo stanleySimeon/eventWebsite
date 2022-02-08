@@ -156,7 +156,7 @@ header .item:hover {
 
 #about {
   background-image: url("./images/pattern.jpg");
-  height: 105vh;
+  min-height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
