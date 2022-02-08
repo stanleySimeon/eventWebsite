@@ -118,7 +118,7 @@ header .item:hover {
   background-image: url(./images/backgroundPattern.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 1s ease;
@@ -129,8 +129,6 @@ header .item:hover {
   border: 2px solid #fff;
   margin: 20px 0;
   height: auto;
-  backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
 }
 
 .container-description p {
@@ -284,7 +282,7 @@ header .item:hover {
     transition: right 0.3s ease;
     display: none;
     z-index: 10;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
