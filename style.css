@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+
   --load-time: 1200ms;
   --home-time-load: 1200ms;
   --header-load-time: 1000ms;
@@ -25,13 +26,13 @@ header {
 }
 
 @keyframes header-loader {
-    0%{
-        transform: translateY(-6rem);
-    }
+  0% {
+    transform: translateY(-6rem);
+  }
 
-    100%{
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 header .fa {
@@ -77,56 +78,57 @@ header .item:hover {
 }
 
 .navbar .items {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .navbar li a {
-    color: #272a31;
-    text-decoration: none;
-    font-size: 20px;
+  color: #272a31;
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .navbar .items a:hover {
-    color: #272a3198;
+  color: #272a3198;
 }
 
 .navbar .items a:active {
-    color: #ec5242;
+  color: #ec5242;
 }
 
 @keyframes nav-load {
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0)
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #home {
-    height: 75vh;
-    background-image: url("./images/header.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 75vh;
+  background-image: url("./images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-container {
-    margin: 120px auto;
-    width: 90%;
-    animation: home-loader var(--home-time-load) ease;
+  margin: 120px auto;
+  width: 90%;
+  animation: home-loader var(--home-time-load) ease;
 }
 
-@keyframes home-loader{
+@keyframes home-loader {
   0% {
     transform: translateY(6rem);
     opacity: 0;
@@ -314,7 +316,7 @@ header .item:hover {
     transition: right 0.3s ease;
     display: none;
     z-index: 10;
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
