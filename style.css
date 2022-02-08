@@ -388,6 +388,6 @@ header .item:hover {
   }
 
   #about{
-      height: 60vh !important;
+    height: 60vh !important;
   }
 }
