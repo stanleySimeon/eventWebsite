@@ -316,7 +316,7 @@ header .item:hover {
     transition: right 0.3s ease;
     display: none;
     z-index: 10;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
