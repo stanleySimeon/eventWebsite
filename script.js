@@ -85,7 +85,7 @@ const featuredSpeakers = [
 
 const featuredSpeaker = (speaker) => {
  const featured_speakers = `<div class="speakers-container">
-        <div class="card">
+        <div class="card speakerCard">
             <div class="speakerView">
                 <img class="speaker-pattern" src="${speaker.pattern}" alt="${speaker.name}">
                 <img class="speaker-img" src="${speaker.picture}" alt="${speaker.name}">
@@ -105,30 +105,5 @@ const featuredSpeak = document.getElementById('featuredSpeakers');
 
 for (let i = 5; i >= 0; i -= 1) {
     const speaker = featuredSpeakers[i];
-    featuredSpeak.insertAdjacentHTML('beforeend', featuredSpeaker(speaker));
+    featuredSpeak.insertAdjacentHTML('afterbegin', featuredSpeaker(speaker));
 }
-
-
-const showSpeakers = function () {
-    document.getElementById('showBtn').classList.add('hide');
-    document.getElementById('hideBtn').classList.add('view');
-    document.getElementById('one').classList.remove('hide');
-    document.getElementById('two').classList.remove('hide');
-    document.getElementById('three').classList.remove('hide');
-    document.getElementById('four').classList.remove('hide');
-};
-
-const hideSpeakers = function () {
-    document.getElementById('showBtn').classList.remove('hide');
-    document.getElementById('hideBtn').classList.remove('view');
-    document.getElementById('one').classList.add('hide');
-    document.getElementById('two').classList.add('hide');
-    document.getElementById('three').classList.add('hide');
-    document.getElementById('four').classList.add('hide');
-};
-
-const showBtn = document.getElementById('showBtn');
-showBtn.onclick = function () { showSpeakers(); };
-
-const hideBtn = document.getElementById('hideBtn');
-hideBtn.onclick = function () { hideSpeakers(); };

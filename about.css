@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'COCOGOOSE-LETTERPRESS';
+  font-family: "COCOGOOSE-LETTERPRESS";
   src: url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.woff") format("woff"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.svg#COCOGOOSE-LETTERPRESS") format("svg"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.eot"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.eot?#iefix") format("embedded-opentype");
   font-weight: normal;
   font-style: normal;
@@ -47,10 +47,10 @@ html {
   text-align: center;
 }
 
-#about-page .container .titleContainerBox h4 {
+#about-page .container .titleContainerBox h1 {
   font-weight: 500;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 2rem;
   color: #e75646;
   margin-bottom: 10px;
 }
@@ -366,9 +366,14 @@ html {
 }
 
 @media (min-width: 768px) {
-  .navbar .items :nth-child(7) {
+  .navbar .items .item-cc a {
     border: 5px solid #ec5242;
+    color: #ec5242;
     padding: 10px;
+  }
+
+  .navbar .items .item-ca a {
+    color: #ec5242;
   }
 
   #about-page .container {
