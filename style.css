@@ -172,7 +172,7 @@ header .item:hover {
   background-image: url(./images/backgroundPattern.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -437,7 +437,7 @@ header .item:hover {
     transition: right 0.3s ease;
     display: none;
     z-index: 10;
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
@@ -510,7 +510,7 @@ header .item:hover {
     color: #ec5242;
   }
 
-  .navbar .items a:active{
+  .navbar .items a:active {
     color: #ec5242;
   }
 
