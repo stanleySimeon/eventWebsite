@@ -368,11 +368,10 @@ html {
 @media (min-width: 768px) {
   .navbar .items .item-cc a {
     border: 5px solid #ec5242;
-    color: #ec5242;
     padding: 10px;
   }
-
-  .navbar .items .item-ca a {
+  
+  .navbar .items a:active{
     color: #ec5242;
   }
 

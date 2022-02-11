@@ -504,17 +504,13 @@ header .item:hover {
     height: auto;
   }
 
-  .navbar ul li {
-    color: #ec5242;
-  }
-
   .navbar .items .item-cc a {
     border: 5px solid #ec5242;
-    color: #ec5242;
     padding: 10px;
+    color: #ec5242;
   }
 
-  .navbar .items .item-ca a {
+  .navbar .items a:active{
     color: #ec5242;
   }
 
