@@ -1,6 +1,20 @@
 /* Color: #272A31, #EC5242, #D3D3D3, #FFFFFF */
 @import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
 
+@font-face {
+  font-family: "cocogoose";
+  src: url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'COCOGOOSE-LETTERPRESS';
+  src: url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.woff") format("woff"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.svg#COCOGOOSE-LETTERPRESS") format("svg"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.eot"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +30,7 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+ header {
   height: 40px;
   background-color: #272a31;
   display: flex;
@@ -118,6 +132,7 @@ header .item:hover {
   height: 75vh;
   background-image: url("./images/header.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -276,7 +291,7 @@ header .item:hover {
 
 #speakers {
   padding-top: 30px;
-  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,33 +311,38 @@ header .item:hover {
   margin-bottom: 70px;
 }
 
-#featuredSpeakers .speakers-container .card {
-  width: 90%;
-  height: 300px;
+.speakers-container .card {
+  width: 95%;
+  height: 320px;
   gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  margin: 20px auto;
+  margin: auto;
+  grid-template-columns: 30% 70%;
+  padding: 0px 10px 0px 10px;
 }
 
-.speakers-container .card .speaker-pattern {
-  width: 80%;
+.card .speakerView{
+  width: 100%;
+  height: 100%;
 }
 
-.speakers-container .card .speaker-img {
+.card .speakerView .speaker-pattern {
+  width: 60%;
+}
+
+.card .speakerView .speaker-img {
   position: relative;
-  width: 100%;
-  top: -16%;
-  left: 15%;
+  width: 90%;
+  top: -20%;
+  left: 10%;
 }
 
-#featuredSpeakers .speakers-container .description-container {
+.card .speakerView .description-container {
   width: 100%;
-  height: 200px;
   padding: 0 15px;
 }
 
-#featuredSpeakers .card .description-container .speakerName {
+.card .description-container .speakerName {
   color: #272a31;
   font-family: "lato", sans-serif;
   font-size: 1.2rem;
@@ -331,7 +351,7 @@ header .item:hover {
   left: -8px;
 }
 
-#featuredSpeakers .card .description-container .speakerPresentation {
+.card .description-container .speakerPresentation {
   font-style: italic;
   font-size: 0.7rem;
   font-weight: 100;
@@ -340,12 +360,12 @@ header .item:hover {
   line-height: 16px;
 }
 
-#featuredSpeakers .card .description-container .presentationBorderBottom {
+.card .description-container .presentationBorderBottom {
   margin-top: -0.5em;
   color: #818181;
 }
 
-#featuredSpeakers .card .description-container .speakerDescription {
+.card .description-container .speakerDescription {
   font-style: italic;
   color: #818181;
   font-size: 1rem;
@@ -538,29 +558,73 @@ header .item:hover {
     box-shadow: 0 0.5rem 1rem #ffffff8f;
   }
 
-  #featuredSpeakers {
-    width: 80%;
+  #featuredSpeakers{
+    width: 100%;
     display: grid;
-    margin: auto;
     grid-template-columns: 45% auto;
-    justify-content: center;
-    gap: 30px;
+    background-color: grey;
   }
 
-  .speakers-container .card .speaker-img {
-    position: relative;
-    width: 100%;
-    top: -34%;
-    left: 15%;
-  }
+.speakers-container .card {
+  background-color: royalblue;
+  width: 90%;
+  gap: 30px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 40% 60%;
+  padding: 0px 10px 0px 10px;
+}
 
-  #featuredSpeakers .speakers-container .card {
-    width: 100%;
-    display: grid;
-    height: 200px;
-    gap: 30px;
-    grid-template-columns: 30% 70%;
-  }
+.speakers-container .card .speakerView{
+  width: 100%;
+}
+
+.card .speakerView .speaker-pattern {
+  width: 60%;
+}
+
+.speakerView .speaker-img {
+  position: relative;
+  width: 90%;
+  top: -17%;
+  left: 10%;
+}
+
+.speakers-container .card .description-container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.card .description-container .speakerName {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  left: -8px;
+}
+
+.card .description-container .speakerPresentation {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: 100;
+  font-family: "cocogoose", sans-serif;
+  color: #ec5242;
+  line-height: 16px;
+}
+
+.card .description-container .presentationBorderBottom {
+  margin-top: -0.5em;
+  color: #818181;
+}
+
+.card .description-container .speakerDescription {
+  font-style: italic;
+  color: #818181;
+  font-size: 1rem;
+  line-height: 25px;
+  margin-top: 10px;
+}
 
   #speakers .showMoreBtn {
     display: none;

@@ -22,6 +22,8 @@ menuToggle.addEventListener('click', () => {
 
 const featuredSpeakers = [
     {
+        id: 'speaker-1',
+        class: 'show',
         pattern: 'images/assets/transparent.jpeg',
         picture: 'images/assets/YochaiBenklerJI6.jpg',
         name: 'Yochai Benkler',
@@ -30,6 +32,8 @@ const featuredSpeakers = [
         description: 'Benkler studies commons-based peer productions, and published his seminal book The Wealth of Network in 2006.'
     },
     {
+        id: 'speaker-2',
+        class: 'show',
         pattern: 'images/assets/transparent.jpeg',
         picture: 'images/assets/Noh.jpg',
         name: 'SohYeong Noh',
@@ -38,6 +42,8 @@ const featuredSpeakers = [
         description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities and the arts.'
     },
     {
+        id: 'one',
+        class: 'hide',
         pattern: 'images/assets/transparent.jpeg',
         picture: './images/assets/lilaTratikov.jpg',
         name: 'Lila Tretikov',
@@ -46,6 +52,8 @@ const featuredSpeakers = [
         description: 'Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languages and used by nearly half a billion people around the world every month.'
     },
     {
+        id: 'two',
+        class: 'hide',
         pattern: 'images/assets/transparent.jpeg',
         picture: './images/assets/Chon_Kilnam.jpg',
         name: 'Kilnam Chon',
@@ -54,6 +62,8 @@ const featuredSpeakers = [
         description: "Kilnam Chon is help to bring the internet to Asia and is an outspoken advocate for the open web and digital commons. in 2012 he was inducted into the inaugural class of the Internet Society's (ISOC) Internet Hall of Fame",
     },
     {
+        id: 'three',
+        class: 'hide',
         pattern: 'images/assets/transparent.jpeg',
         picture: './images/assets/Julia.jpg',
         name: 'Julia Leda',
@@ -62,6 +72,8 @@ const featuredSpeakers = [
         description: "European integration, political democracy and participation of youth trough online as her major condern, Reda's report outlining potential changes to EU copyright law was approved by the Parliament in July."
     },
     {
+        id: 'four',
+        class: 'hide',
         pattern: 'images/assets/transparent.jpeg',
         picture: './images/assets/ryanMerkley.jpg',
         name: 'Ryan Merkley',
@@ -71,24 +83,52 @@ const featuredSpeakers = [
     }
 ];
 
-const featured_speakers = document.getElementById('featuredSpeakers');
-
-featuredSpeakers.forEach((speaker) => {
-    featured_speakers.innerHTML += `<div class="speakers-container">
+const featuredSpeaker = (speaker) => {
+ const featured_speakers = `<div class="speakers-container">
         <div class="card">
-            <div>
+            <div class="speakerView">
                 <img class="speaker-pattern" src="${speaker.pattern}" alt="${speaker.name}">
                 <img class="speaker-img" src="${speaker.picture}" alt="${speaker.name}">
-                    </div>
-                        <div class="description-container">
-                        <h2 class="speakerName">${speaker.name}</h2>
-                        <p class="speakerPresentation">${speaker.presentation}</p>
-                        <div class="presentationBorderBottom">${speaker.bar}</div>
-                        <p class="speakerDescription">${speaker.description}</p>
-                    </div>
+            </div>
+            <div class="description-container">
+                <h2 class="speakerName">${speaker.name}</h2>
+                <p class="speakerPresentation">${speaker.presentation}</p>
+                <div class="presentationBorderBottom">${speaker.bar}</div>
+                <p class="speakerDescription">${speaker.description}</p>
             </div>
         </div>
+        </div>
     `;
-});
+    return featured_speakers;
+};
+const featuredSpeak = document.getElementById('featuredSpeakers');
+
+for (let i = 5; i >= 0; i -= 1) {
+    const speaker = featuredSpeakers[i];
+    featuredSpeak.insertAdjacentHTML('beforeend', featuredSpeaker(speaker));
+}
 
 
+const showSpeakers = function () {
+    document.getElementById('showBtn').classList.add('hide');
+    document.getElementById('hideBtn').classList.add('view');
+    document.getElementById('one').classList.remove('hide');
+    document.getElementById('two').classList.remove('hide');
+    document.getElementById('three').classList.remove('hide');
+    document.getElementById('four').classList.remove('hide');
+};
+
+const hideSpeakers = function () {
+    document.getElementById('showBtn').classList.remove('hide');
+    document.getElementById('hideBtn').classList.remove('view');
+    document.getElementById('one').classList.add('hide');
+    document.getElementById('two').classList.add('hide');
+    document.getElementById('three').classList.add('hide');
+    document.getElementById('four').classList.add('hide');
+};
+
+const showBtn = document.getElementById('showBtn');
+showBtn.onclick = function () { showSpeakers(); };
+
+const hideBtn = document.getElementById('hideBtn');
+hideBtn.onclick = function () { hideSpeakers(); };
