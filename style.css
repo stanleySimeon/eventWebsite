@@ -1,4 +1,20 @@
 /* Color: #272A31, #EC5242, #D3D3D3, #FFFFFF */
+@import url("http://fonts.cdnfonts.com/css/cocogoose?styles=44178");
+
+@font-face {
+  font-family: "cocogoose";
+  src: url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.woff") format("woff"), url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.svg#COCOGOOSE") format("svg"), url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.eot"), url("../webfonts_COCOGOOSE/COCOGOOSE.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "COCOGOOSE-LETTERPRESS";
+  src: url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.woff") format("woff"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.svg#COCOGOOSE-LETTERPRESS") format("svg"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.eot"), url("../webfonts_COCOGOOSE-LETTERPRESS/COCOGOOSE-LETTERPRESS.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -116,6 +132,7 @@ header .item:hover {
   height: 75vh;
   background-image: url("./images/header.png");
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -162,6 +179,7 @@ header .item:hover {
 .container-description {
   padding: 20px;
   border: 2px solid #fff;
+  background-color: #d3d3d3;
   margin: 20px 0;
   height: auto;
 }
@@ -189,9 +207,9 @@ header .item:hover {
   margin-top: 10px;
 }
 
-#about {
+#program {
   background-image: url("./images/pattern.jpg");
-  height: 110vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -271,6 +289,109 @@ header .item:hover {
   border: 1px solid #fff;
 }
 
+#speakers {
+  padding-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#speakers h2 {
+  color: #272a31;
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+#speakers .featured-speakers-text-bottom-bar {
+  width: 50px;
+  height: 2px;
+  background-color: #ec5242;
+  margin-bottom: 70px;
+}
+
+.speakers-container .speakerCard {
+  width: 95%;
+  height: 320px;
+  gap: 10px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 30% 70%;
+  padding: 0 10px;
+}
+
+.card .speakerView {
+  width: 100%;
+  height: 100%;
+}
+
+.card .speakerView .speaker-pattern {
+  width: 60%;
+}
+
+.card .speakerView .speaker-img {
+  position: relative;
+  width: 90%;
+  top: -20%;
+  left: 10%;
+}
+
+.card .speakerView .description-container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.card .description-container .speakerName {
+  color: #272a31;
+  font-family: "lato", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+  left: -8px;
+}
+
+.card .description-container .speakerPresentation {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: 100;
+  font-family: "cocogoose", sans-serif;
+  color: #ec5242;
+  line-height: 16px;
+}
+
+.card .description-container .presentationBorderBottom {
+  margin-top: -0.5em;
+  color: #818181;
+}
+
+.card .description-container .speakerDescription {
+  font-style: italic;
+  color: #818181;
+  font-size: 1rem;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+#speakers .showMoreBtn {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #272a31;
+  background: #fff;
+  border: 1px solid #818181;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+#speakers .showMoreBtn .fa {
+  color: #ec5242;
+}
+
 @media (max-width: 767px) {
   header {
     display: none;
@@ -331,6 +452,36 @@ header .item:hover {
   .about-items-container .btn2 {
     display: none;
   }
+
+  #program {
+    height: 110vh;
+  }
+
+  #featuredSpeakers .speakers-container {
+    height: 230px;
+    margin-top: -30px;
+  }
+
+  #featuredSpeakers .speakers-container:nth-child(3) {
+    display: none;
+  }
+
+  #featuredSpeakers .speakers-container:nth-child(4) {
+    display: none;
+  }
+
+  #featuredSpeakers .speakers-container:nth-child(5) {
+    display: none;
+  }
+
+  #featuredSpeakers .speakers-container:nth-child(6) {
+    display: none;
+  }
+
+  #speakers .footer,
+  .bottomInfos {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -348,14 +499,19 @@ header .item:hover {
     align-items: center;
   }
 
-  #about {
+  #program {
     height: 60vh !important;
     height: auto;
   }
 
-  .navbar .items :nth-child(8) {
+  .navbar .items .item-cc a {
     border: 5px solid #ec5242;
     padding: 10px;
+    color: #ec5242;
+  }
+
+  .navbar .items a:active {
+    color: #ec5242;
   }
 
   .title-container {
@@ -378,7 +534,7 @@ header .item:hover {
 
   .flex-row-container .card {
     flex-direction: column;
-    height: 250px;
+    height: 230px;
     justify-content: space-around;
     width: 200px;
   }
@@ -407,6 +563,171 @@ header .item:hover {
     transition: all 0.9s ease;
     box-shadow: 0 0.5rem 1rem #ffffff8f;
   }
+
+  #featuredSpeakers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .speakers-container .speakerCard {
+    width: 90%;
+    gap: 20px;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 30% 70%;
+    padding: 0 10px;
+  }
+
+  .speakers-container .card .speakerView {
+    width: 100%;
+  }
+
+  .card .speakerView .speaker-pattern {
+    width: 60%;
+  }
+
+  .card .speakerView .speaker-img {
+    position: relative;
+    width: 90%;
+    top: -30%;
+    left: 10%;
+  }
+
+  .card .description-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .card .description-container .speakerName {
+    color: #272a31;
+    font-family: "lato", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    left: -8px;
+  }
+
+  .card .description-container .speakerPresentation {
+    font-style: italic;
+    font-size: 0.7rem;
+    font-weight: 100;
+    font-family: "cocogoose", sans-serif;
+    color: #ec5242;
+    line-height: 16px;
+  }
+
+  .card .description-container .presentationBorderBottom {
+    margin-top: -0.5em;
+    color: #818181;
+  }
+
+  .card .description-container .speakerDescription {
+    font-style: italic;
+    color: #818181;
+    font-size: 1rem;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  #speakers .showMoreBtn {
+    display: none;
+  }
+
+  #speakers .footer {
+    margin-bottom: 50px;
+    width: 100%;
+    height: 250px;
+    padding: 30px;
+    background-color: #33353a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #speakers .footer h2 {
+    color: #818181;
+    font-weight: 300;
+  }
+
+  #speakers .footer .partner-bottom-bar {
+    width: 30px;
+    height: 1px;
+    background: #ec5242;
+  }
+
+  #speakers .footer .partnersItem {
+    width: 60%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #speakers .footer .partnersItem .mozilla,
+  .google,
+  .naver,
+  .daumkakao {
+    color: #818181;
+  }
+
+  #speakers .footer .partnersItem .mozilla {
+    font-size: 2.2em;
+    font-weight: 500;
+  }
+
+  #speakers .footer .partnersItem .google {
+    font-size: 2em;
+    font-weight: lighter;
+  }
+
+  #speakers .footer .partnersItem .naver {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+
+  #speakers .footer .partnersItem .daumkakao {
+    font-size: 2em;
+    font-weight: lighter;
+  }
+
+  #speakers .footer .partnersItem .fa-brands {
+    width: 40px;
+    color: #818181;
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+
+  #speakers .bottomInfos {
+    width: 70%;
+    height: 80px;
+    margin-bottom: 120px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #speakers .bottomInfos .text {
+    padding-left: 50px;
+  }
+
+  #speakers .bottomInfos .bottomLogo {
+    width: 100px;
+  }
+
+  #speakers .bottomInfos p:nth-child(1) {
+    color: #273129;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
+  #speakers .bottomInfos p:nth-child(2) {
+    color: #818181;
+    font-weight: 500;
+  }
 }
 
 @media (min-width: 992px) {
@@ -422,7 +743,7 @@ header .item:hover {
     width: 60%;
   }
 
-  #about {
-    height: 60vh !important;
+  #program {
+    height: 70vh !important;
   }
 }

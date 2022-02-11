@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="http://fonts.cdnfonts.com/css/cocogoose?styles=44178" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,400;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
     <title>Stanley's Capstone Project</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-90K7L4LZ2P"></script>
@@ -36,18 +40,18 @@
             <a class="logo" href="#home"><img class="logo-img" src="./images/xdevLogo.png" alt="logo image"></a>
             <ul class="items">
                 <li class="item"><i class="fa fa-times close-btn"></i></li>
-                <li class="item"><a href="#home">Home</a></li>
-                <li class="item"><a href="#about">About</a></li>
-                <li class="item"><a href="#">Program</a></li>
+                <li class="item item-ca"><a href="index.html">Home</a></li>
+                <li class="item"><a href="about.html">About</a></li>
+                <li class="item"><a href="#program">Program</a></li>
                 <li class="item"><a href="#">Join</a></li>
                 <li class="item"><a href="#">Sponsor</a></li>
                 <li class="item"><a href="#">News</a></li>
-                <li class="item"><a href="#">CC Campaign</a></li>
+                <li class="item-cc"><a href="#">CC Campaign</a></li>
             </ul>
         </nav>
         <section id="home">
             <div class="title-container">
-                <h4 class="home-title h-4">"XDev Announcement"</h4>
+                <h1 class="home-title h-4">"XDev Announcement"</h1>
                 <h1 class="home-title-important h-1">FRONT END WEB DEVELOPMENT <br> COURSE</h1>
                 <div class="container-description">
                     <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odio.
@@ -60,7 +64,7 @@
                 </div>
             </div>
         </section>
-        <section id="about">
+        <section id="program">
             <div class="about-items-container">
                 <h1 class="main-h1">Main Program</h1>
                 <div class="main-bottom-bar"></div>
@@ -97,9 +101,40 @@
                     </div>
                 </div>
                 <button class="joinCourse-btn btn1" type="submit">Join The Web Development Course </button>
-                <button class="joinCourse-btn btn2" type="submit"><span class="btnSpan">SEE THE WHOLE PROGRAM</span></button>
+                <button class="joinCourse-btn btn2" type="submit"><span class="btnSpan">SEE THE WHOLE
+                        PROGRAM</span></button>
             </div>
         </section>
+
+        <section id="speakers">
+            <h2 class="featured-speaker-title">Featured Speakers</h2>
+            <div class="featured-speakers-text-bottom-bar"></div>
+            <div id="featuredSpeakers">
+
+            </div>
+            <button type="submit" class="showMoreBtn" id="showBtn">MORE<span class="fa fa-chevron-down"></span></button>
+            <div class="footer">
+                <h2>Partner</h2>
+                <div class="partner-bottom-bar"></div>
+                <div class="partnersItem">
+                    <h2 class="mozilla">mozilla</h2>
+                    <h4 class="google">Google</h4>
+                    <h1 class="naver">NAVER</h1>
+                    <h4 class="daumkakao">daumkakao</h4>
+                    <i class="fa-brands fa-airbnb">airbnb</i>
+                </div>
+            </div>
+            <div class="bottomInfos">
+                <img class="bottomLogo" src="./images/xdevLogo.png" alt="XDev logo">
+                <div class="text">
+                    <p>2022 Web Development Course in Haiti, at Banj. Some Rights Reserved</p>
+                    <p>Being a web developer is always difficult. It’s a creative job, but one where usually you aren’t
+                        the primary
+                        stakeholder. http://xdevwebdevcourse.io</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <script src="script.js"></script>
