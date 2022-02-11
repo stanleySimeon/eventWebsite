@@ -75,20 +75,19 @@ const featured_speakers = document.getElementById('featuredSpeakers');
 
 featuredSpeakers.forEach((speaker) => {
     featured_speakers.innerHTML += `<div class="speakers-container">
-                <div class="card">
-                    <div>
-                        <img class="speaker-pattern" src="${speaker.pattern}" alt="${speaker.name}">
-                        <img class="speaker-img" src="${speaker.picture}" alt="${speaker.name}">
+        <div class="card">
+            <div>
+                <img class="speaker-pattern" src="${speaker.pattern}" alt="${speaker.name}">
+                <img class="speaker-img" src="${speaker.picture}" alt="${speaker.name}">
                     </div>
-                    <div class="description-container">
+                        <div class="description-container">
                         <h2 class="speakerName">${speaker.name}</h2>
                         <p class="speakerPresentation">${speaker.presentation}</p>
                         <div class="presentationBorderBottom">${speaker.bar}</div>
                         <p class="speakerDescription">${speaker.description}</p>
                     </div>
-                </div>
-
             </div>
+        </div>
     `;
 });
 
