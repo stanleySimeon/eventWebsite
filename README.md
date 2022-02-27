@@ -4,6 +4,8 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+My fisrt capstone project built with HTML/CSS/JavaScript
+
 Additional description about the project and its features.
 
 ## Built With
@@ -39,7 +41,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## Show your support
 
-If you like this project you can support just by giving a like.
+If you like this project you can support just by giving a Star.
 
 ## Web designer
 - Behance: [https://www.behance.net/adagio07]
