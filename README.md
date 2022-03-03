@@ -4,7 +4,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-My fisrt capstone project built with HTML/CSS/JavaScript
+My fisrt project built with HTML/CSS/JavaScript
 
 Additional description about the project and its features.
 
