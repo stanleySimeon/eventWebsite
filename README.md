@@ -1,4 +1,4 @@
-# StanleyCapstone
+# CapstoneProject
 
 # mobileSkeleton
 
@@ -18,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-- [Live Demo Link](https://mstanley-me.github.io/StanleyCapstone/)
+- [Live Demo Link](https://mstanley-me.github.io/CapstoneProject/)
 
 
 ## Getting Started
