@@ -1,7 +1,5 @@
 # CapstoneProject
 
-# mobileSkeleton
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 My fisrt project built with HTML/CSS/JavaScript
