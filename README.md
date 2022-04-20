@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-- [Live Demo Link](https://mstanley-me.github.io/eventWebsite/)
+- [Live Demo Link](https://stanleySimeon.github.io/eventWebsite/)
 
 
 ## Getting Started
