@@ -19,5 +19,34 @@
   "homepage": "https://github.com/stanleySimeon/eventWebsite#readme",
   "devDependencies": {
     "hint": "^7.1.3"
+  },
+  "hintConfig": {
+    "connector": {
+      "name": "local"
+    },
+    "formatters": [
+      "html"
+    ],
+    "hints": {
+      "axe": "error",
+      "content-type": "error",
+      "disown-opener": "error",
+      "http-cache": "error",
+      "meta-charset-utf-8": "error",
+      "meta-viewport": "error",
+      "no-disallowed-headers": "error",
+      "no-friendly-error-pages": "error",
+      "no-html-only-headers": "error",
+      "no-http-redirects": "error",
+      "no-protocol-relative-urls": "error",
+      "no-vulnerable-javascript-libraries": "error",
+      "strict-transport-security": "error",
+      "x-content-type-options": "error",
+      "x-frame-options": "error",
+      "x-xss-protection": "error"
+    },
+    "parsers": [
+      "html"
+    ]
   }
 }
