@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/assets/favicon.ico" type="icon/png">
+  <link href="https://stanleySimeon.github.io/eventWebsite/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>xDev CONF</title>
+</head>
+
+<body class="font-lato overflow-x-hidden">
+  <header class="container-fluid sticky top-0 left-0 z-50 md:bg-white md:shadow-md">
+    <nav class="w-full">
+      <div
+        class="md:px-16 lg:px-36 xl:px-48 md:flex justify-end items-center py-2 space-x-8 text-white bg-[#272A31] hidden">
+        <span class="flex space-x-6 justify-center items-center">
+          <i class="fa fa-facebook cursor-pointer"></i>
+          <i class="fa fa-twitter cursor-pointer"></i>
+        </span>
+        <ul class="flex justify-end items-center space-x-6">
+          <li class="cursor-pointer">English</li>
+          <li class="cursor-pointer">My Page</li>
+          <li class="cursor-pointer">Logout</li>
+        </ul>
+      </div>
+      <i class="fa fa-bars open-btn absolute top-2 left-3 md:hidden text-3xl text-[#272A31]"></i>
+      <i class="fa fa-times close-btn absolute top-2 left-3 hidden text-3xl text-[#ffffff]"></i>
+      <div id="menu"
+        class="w-full h-screen md:h-auto hidden bg-[#272A31] bg-opacity-95 md:bg-transparent md:flex md:justify-between items-center md:px-16 lg:px-36 xl:px-48 py-4 space-y-12 md:space-y-0">
+        <a class="logo" href="index.html">
+          <img class="h-6" src="./images/xdevLogo.png" alt="logo">
+        </a>
+        <ul
+          class="items flex flex-col md:flex-row space-y-12 md:space-y-0 md:space-x-8 lg:space-x-10 justify-center items-center text-white md:text-[#272A31]">
+          <li class="item text-[#ffffff] md:text-[#EC5242] active"><a href="about.html">About</a></li>
+          <li class="item text-[#ffffff] md:text-[#272A31]"><a href="#">Program</a></li>
+          <li class="item text-[#ffffff] md:text-[#272A31]"><a href="#">Join</a></li>
+          <li class="item text-[#ffffff] md:text-[#272A31]"><a href="#">Sponsor</a></li>
+          <li class="item text-[#ffffff] md:text-[#272A31]"><a href="#">News</a></li>
+          <li class="text-[#ffffff] md:text-[#EC5242] border-4 border-[#EC5242] px-2 py-1 whitespace-nowrap"><a
+              href="#">GET TICKET</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="container-fluid h-full pb-36 bg-header md:bg-center bg-cover bg-no-repeat flex flex-col space-y-8">
+      <div class="w-full h-full justify-center flex flex-col px-3 md:px-16 lg:px-32 xl:px-48 mt-32 lg:mt-28">
+        <h1 class="text-xl md:text-2xl lg:text-3xl text-[#EC5242]">"Hello! Sharing World"</h1>
+        <h1
+          class="bg-clip-text text-transparent bg-gradient-to-r from-[#f16b11] to-[#ef0000] text-3xl md:text-5xl lg:text-6xl lg:mt-2 font-extrabold">
+          JAVASCRIPT DEV<br />GLOBAL SUMMIT <br />2023
+        </h1>
+        <div class="w-full lg:w-3/5 mt-3 py-2 px-4 md:px-6 bg-[#f4f3f3] border-4 border-white">
+          <p>
+            A joy full celebration believing in the value of openness and sharing,
+            creating a positive change with people from over 80 countries is taking place in January, Haiti.
+          </p>
+        </div>
+        <div class="mt-4">
+          <h1 class="text-[#272A31] font-extrabold text-xl md:text-2xl lg:text-4xl mb-3">2023.01.08(THU) ~ 30(WED)</h1>
+          <p class="text-[#7b7b7b] text-xl">147 Ave Jean-Paul II, Port-au-Prince 6113</p>
+        </div>
+      </div>
+    </section>
+    <section id="program" class="container-fluid bg-program-texture">
+      <div class="w-full px-3 md:px-16 lg:px-32 xl:px-48 space-y-12 flex flex-col justify-center items-center pt-12 pb-20">
+        <span class="flex flex-col justify-center items-center space-y-2">
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-white">Main Program</h1>
+          <div class="w-12 border-b-2 border-[#EC5242]"></div>
+        </span>
+        <div id="mainProgram" class="w-full flex flex-col md:flex-row justify-center items-center space-x-1 space-y-4 md:space-y-0 my-12 md:my-0">
+          <!-- Render the main program here -->
+        </div>
+        <button class="w-full flex justify-center items-center md:hidden text-white p-6 bg-[#EC5242]" type="button">Join The Dev Global Summit 2023 </button>
+        <button class="btn border-b mt-16 mb-12 text-white hidden md:flex" type="submit">SEE THE WHOLE PROGRAM</button>
+      </div>
+    </section>
+
+    <section id="speakers" class="container-fluid py-12 px-3 md:px-16 lg:px-32 xl:px-48 flex flex-col">
+      <span class="flex flex-col justify-center items-center space-y-2">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold text-[#272A31]">Main Program</h1>
+        <div class="w-12 border-b-2 border-[#EC5242]"></div>
+      </span>
+      <div id="featuredSpeakers" class="md:grid grid-cols-2 gap-x-8 gap-y-12 md:gap-y-24 mt-16">
+        <!-- Render Speakers here -->
+      </div>
+      <span class="w-full md:hidden" id="show-more-btn"></span>
+    </section>
+    <div class="w-full flex flex-col py-12 space-y-14 justify-center items-center bg-[#272A31]">
+      <span class="flex flex-col justify-center items-center space-y-4">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-medium text-[#d3d3d3]">Partner</h1>
+        <div class="w-8 border-b border-[#EC5242]"></div>
+      </span>
+      <div
+        class="flex flex-col md:flex-row justify-center items-center md:space-x-12 space-y-4 pb-6 text-xl md:text-4xl font-bold text-[#d3d3d3]">
+        <span class="flex justify-center items-center space-x-12">
+          <h2 class="mozilla">mozilla</h2>
+          <h4 class="font-thin">Google</h4>
+          <h1 class="font-extrabold">NAVER</h1>
+        </span>
+        <span class="flex justify-center items-center space-x-12">
+          <h4 class="font-thin">daumkakao</h4>
+          <i class="fa-brands fa-airbnb font-medium">airbnb</i>
+        </span>
+      </div>
+    </div>
+    <div
+      class="w-full px-3 md:px-16 lg:px-32 xl:px-48 flex flex-col md:flex-row justify-center items-center py-16 md:space-x-16">
+      <img class="h-8 md:h-16" src="./images/xdevLogo.png" alt="XDev logo">
+      <div class="flex flex-col space-y-4 mt-4 md:mt-0">
+        <p class="font-bold text-[#272A31]">2023 JavaScript Dev Global Summit at Mariot, Haiti. Some Rights Reserved
+        </p>
+        <p class="text-[#808080]">Being a web developer is always difficult. It’s a creative job, but one where usually
+          you aren’t
+          the primary
+          stakeholder. http://xdevsummit2023@jshaiti.dev</p>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="/index.js"></script>
+</body>
+
+</html>
