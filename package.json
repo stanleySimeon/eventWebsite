@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/stanleySimeon/eventWebsite/issues"
   },
-  "homepage": "https://github.com/stanleySimeon/eventWebsite#readme"
+  "homepage": "https://github.com/stanleySimeon/eventWebsite#readme",
+  "devDependencies": {
+    "hint": "^7.1.3"
+  }
 }
