@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html, js, css}"],
+  content: ['./*.{html, js, css}'],
   extends: ['@stanleySimeon/tailwindcss-config', 'stylelint-config-standard-scss'],
   rules: {
     'at-rule-no-unknown': null,
     'scss/at-rule-no-unknown': [
       true,
       {
-        'ignoreAtRules': ['tailwind']
-      }
+        ignoreAtRules: ['tailwind'],
+      },
     ],
   },
   purge: false,
   theme: {
     extend: {
       backgroundImage: {
-        'header': "url('https://stanleySimeon.github.io/eventWebsite/images/header.AVIF')",
+        header: "url('https://stanleySimeon.github.io/eventWebsite/images/header.AVIF')",
         'program-texture': "url('https://stanleySimeon.github.io/eventWebsite/images/pattern.AVIF')",
       },
       fontFamily: {
@@ -24,8 +24,8 @@ module.exports = {
       colors: {
         primary: '#272A31',
         secondary: '#EC5242',
-        Gray: "#D3D3D3",
-        white: "#FFFFFF",
+        Gray: '#D3D3D3',
+        white: '#FFFFFF',
       },
       container: {
         center: true,
@@ -50,18 +50,16 @@ module.exports = {
           xl: '48px',
         },
         borderRadius: {
-          'none': '0',
-          'sm': '0.125rem',
+          none: '0',
+          sm: '0.125rem',
           DEFAULT: '0.25rem',
-          DEFAULT: '4px',
-          'md': '0.375rem',
-          'lg': '0.5rem',
-          'full': '9999px',
-          'large': '12px',
+          md: '0.375rem',
+          lg: '0.5rem',
+          full: '9999px',
+          large: '12px',
         },
       },
     },
   },
   plugins: [],
-}
-
+};
